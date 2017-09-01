@@ -50,14 +50,14 @@ case class FooRow(
    a40: Option[String] = None,
    a41: Option[String] = None,
    a42: Option[Long] = None,
-   a43: Option[String] = None,
-   a44: Option[String] = None
+   a43: Option[String] = None
+   //a44: Option[String] = None
 )
 
 
 class Foo(_tableTag: Tag) extends Table[FooRow](_tableTag, "foo") {
-   //def * = (a1 :: a2 :: a3 :: a4 :: a5 :: a6 :: a7 :: a8 :: a9 :: a10 :: a11 :: a12 :: a13 :: a14 :: a15 :: a16 :: a17 :: a18 :: a19 :: a20 :: a21 :: a22 :: a23 :: a24 :: a25 :: a26 :: a27 :: a28 :: a29 :: a30 :: a31 :: a32 :: a33 :: a34 :: a35 :: a36 :: a37 :: a38 :: a39 :: a40 :: a41 :: a42 :: a43 :: HNil).shaped <> ({case x => FooRow(x(0),x(1),x(2),x(3),x(4),x(5),x(6),x(7),x(8),x(9),x(10),x(11),x(12),x(13),x(14),x(15),x(16),x(17),x(18),x(19),x(20),x(21),x(22),x(23),x(24),x(25),x(26),x(27),x(28),x(29),x(30),x(31),x(32),x(33),x(34),x(35),x(36),x(37),x(38),x(39),x(40),x(41),x(42))}, ({ x:FooRow => Option((x.a1 :: x.a2 :: x.a3 :: x.a4 :: x.a5 :: x.a6 :: x.a7 :: x.a8 :: x.a9 :: x.a10 :: x.a11 :: x.a12 :: x.a13 :: x.a14 :: x.a15 :: x.a16 :: x.a17 :: x.a18 :: x.a19 :: x.a20 :: x.a21 :: x.a22 :: x.a23 :: x.a24 :: x.a25 :: x.a26 :: x.a27 :: x.a28 :: x.a29 :: x.a30 :: x.a31 :: x.a32 :: x.a33 :: x.a34 :: x.a35 :: x.a36 :: x.a37 :: x.a38 :: x.a39 :: x.a40 :: x.a41 :: x.a42 :: x.a43 :: HNil))}))
-   def * = (a1 :: a2 :: a3 :: a4 :: a5 :: a6 :: a7 :: a8 :: a9 :: a10 :: a11 :: a12 :: a13 :: a14 :: a15 :: a16 :: a17 :: a18 :: a19 :: a20 :: a21 :: a22 :: a23 :: a24 :: a25 :: a26 :: a27 :: a28 :: a29 :: a30 :: a31 :: a32 :: a33 :: a34 :: a35 :: a36 :: a37 :: a38 :: a39 :: a40 :: a41 :: a42 :: a43 :: a44 :: HNil).shaped <> ({case x => FooRow(x(0),x(1),x(2),x(3),x(4),x(5),x(6),x(7),x(8),x(9),x(10),x(11),x(12),x(13),x(14),x(15),x(16),x(17),x(18),x(19),x(20),x(21),x(22),x(23),x(24),x(25),x(26),x(27),x(28),x(29),x(30),x(31),x(32),x(33),x(34),x(35),x(36),x(37),x(38),x(39),x(40),x(41),x(42),x(43))}, ({ x:FooRow => Option((x.a1 :: x.a2 :: x.a3 :: x.a4 :: x.a5 :: x.a6 :: x.a7 :: x.a8 :: x.a9 :: x.a10 :: x.a11 :: x.a12 :: x.a13 :: x.a14 :: x.a15 :: x.a16 :: x.a17 :: x.a18 :: x.a19 :: x.a20 :: x.a21 :: x.a22 :: x.a23 :: x.a24 :: x.a25 :: x.a26 :: x.a27 :: x.a28 :: x.a29 :: x.a30 :: x.a31 :: x.a32 :: x.a33 :: x.a34 :: x.a35 :: x.a36 :: x.a37 :: x.a38 :: x.a39 :: x.a40 :: x.a41 :: x.a42 :: x.a43 :: a44 :: HNil))}))
+   def * = (a1 :: a2 :: a3 :: a4 :: a5 :: a6 :: a7 :: a8 :: a9 :: a10 :: a11 :: a12 :: a13 :: a14 :: a15 :: a16 :: a17 :: a18 :: a19 :: a20 :: a21 :: a22 :: a23 :: a24 :: a25 :: a26 :: a27 :: a28 :: a29 :: a30 :: a31 :: a32 :: a33 :: a34 :: a35 :: a36 :: a37 :: a38 :: a39 :: a40 :: a41 :: a42 :: a43 :: HNil).shaped <> ({case x => FooRow(x(0),x(1),x(2),x(3),x(4),x(5),x(6),x(7),x(8),x(9),x(10),x(11),x(12),x(13),x(14),x(15),x(16),x(17),x(18),x(19),x(20),x(21),x(22),x(23),x(24),x(25),x(26),x(27),x(28),x(29),x(30),x(31),x(32),x(33),x(34),x(35),x(36),x(37),x(38),x(39),x(40),x(41),x(42))}, ({ x:FooRow => Option((x.a1 :: x.a2 :: x.a3 :: x.a4 :: x.a5 :: x.a6 :: x.a7 :: x.a8 :: x.a9 :: x.a10 :: x.a11 :: x.a12 :: x.a13 :: x.a14 :: x.a15 :: x.a16 :: x.a17 :: x.a18 :: x.a19 :: x.a20 :: x.a21 :: x.a22 :: x.a23 :: x.a24 :: x.a25 :: x.a26 :: x.a27 :: x.a28 :: x.a29 :: x.a30 :: x.a31 :: x.a32 :: x.a33 :: x.a34 :: x.a35 :: x.a36 :: x.a37 :: x.a38 :: x.a39 :: x.a40 :: x.a41 :: x.a42 :: x.a43 :: HNil))}))
+//   def * = (a1 :: a2 :: a3 :: a4 :: a5 :: a6 :: a7 :: a8 :: a9 :: a10 :: a11 :: a12 :: a13 :: a14 :: a15 :: a16 :: a17 :: a18 :: a19 :: a20 :: a21 :: a22 :: a23 :: a24 :: a25 :: a26 :: a27 :: a28 :: a29 :: a30 :: a31 :: a32 :: a33 :: a34 :: a35 :: a36 :: a37 :: a38 :: a39 :: a40 :: a41 :: a42 :: a43 :: a44 :: HNil).shaped <> ({case x => FooRow(x(0),x(1),x(2),x(3),x(4),x(5),x(6),x(7),x(8),x(9),x(10),x(11),x(12),x(13),x(14),x(15),x(16),x(17),x(18),x(19),x(20),x(21),x(22),x(23),x(24),x(25),x(26),x(27),x(28),x(29),x(30),x(31),x(32),x(33),x(34),x(35),x(36),x(37),x(38),x(39),x(40),x(41),x(42),x(43))}, ({ x:FooRow => Option((x.a1 :: x.a2 :: x.a3 :: x.a4 :: x.a5 :: x.a6 :: x.a7 :: x.a8 :: x.a9 :: x.a10 :: x.a11 :: x.a12 :: x.a13 :: x.a14 :: x.a15 :: x.a16 :: x.a17 :: x.a18 :: x.a19 :: x.a20 :: x.a21 :: x.a22 :: x.a23 :: x.a24 :: x.a25 :: x.a26 :: x.a27 :: x.a28 :: x.a29 :: x.a30 :: x.a31 :: x.a32 :: x.a33 :: x.a34 :: x.a35 :: x.a36 :: x.a37 :: x.a38 :: x.a39 :: x.a40 :: x.a41 :: x.a42 :: x.a43 :: a44 :: HNil))}))
    val a1: Column[Long] = column[Long]("a1", O.AutoInc, O.PrimaryKey)
    val a2: Column[Option[Long]] = column[Option[Long]]("a2", O.Default(None))
    val a3: Column[Option[String]] = column[Option[String]]("a3", O.Default(None))
@@ -101,7 +101,7 @@ class Foo(_tableTag: Tag) extends Table[FooRow](_tableTag, "foo") {
    val a41: Column[Option[String]] = column[Option[String]]("a41", O.Default(None))
    val a42: Column[Option[Long]] = column[Option[Long]]("a42", O.Default(None))
    val a43: Column[Option[String]] = column[Option[String]]("a43", O.Default(None))
-   val a44: Column[Option[String]] = column[Option[String]]("a44", O.Default(None))
+//   val a44: Column[Option[String]] = column[Option[String]]("a44", O.Default(None))
 
    val index1 = index("idx1", a2 :: a3 :: HNil)
    val index2 = index("idx2", a6 :: HNil)
